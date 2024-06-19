@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lyrics Finder By Androogs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main id="content" class="content">
+            <h1><a href="index.html">Letras de Canciones</a></h1>
+            <div class="container">
+                    <div id="search" class="search">
+                            <h2>Búsqueda</h2>
+                            <p>Busca por artista y nombre:</p>
+                            <p><span> * </span>Obligatorio</p>
+                            <form action="#" id="form-search">
+                                <div class="input">
+                                    <label for="artist">Artista: <span>*</span></label>
+                                    <input type="text" id="artist" placeholder="Escribe el nombre del Artista...">
+                                </div>
+                                <div class="input">
+                                    <label for="song">Canción: <span>*</span></label>
+                                    <input type="text" id="song" placeholder="Escribe el nombre de la canción...">
+                                </div>
+                                <div class="input send">
+                                    <input type="submit" value="Buscar">
+                                </div>
+                            </form>
+                    </div>
+                    <div class="letter-result">
+                            <h2></h2>
+                            <div id="result"></div>
+                    </div>
+                    <div id="messages"></div>
+            </div>
+    </main>
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
